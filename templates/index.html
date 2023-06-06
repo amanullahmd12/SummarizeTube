@@ -1,12 +1,8 @@
 <html>
   <head>
     <meta name="viewport" content="width-device-width, initial-scale=1.0" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Play&display=swap"
-      rel="stylesheet"
-    />
     <link rel="icon" type="image/x-icon" href="/static/images/favicon.ico" />
-    <title>Multilanguages Transcript Summarizer</title>
+    <title>SummarizeTube</title>
 
     <meta name="theme-color" content="#ffffff" />
   </head>
@@ -16,32 +12,80 @@
       <div class="logo">
         <img
           class="nav-logo"
-          src="/static/icon.png"
+          src="/static/YouTube_Logo.png"
           href="/"
           alt="Youtube"
-          width="100"
-          height="100"
+          width="60"
+          height="40"
         />
-        <h1 href=" ">Youtube</h1>
+        <h1 href=" ">SummarizeTube</h1>
       </div>
     </nav>
 
     <div class="very_main">
+
       <header>
         <div class="top_frame">
-          <h1>Multilanguages Youtube Summarizer</h1>
+          <h1 class="slogan">Save time, get the gist</h1>
+          <div class="slogan-para">
+          <p id = "slogan-text" class="slogan-text">With its advanced summarization technology, it condenses lengthy videos into concise and informative summaries, unlocking the essence of every video. Say goodbye to wasting time on lengthy content and hello to efficient viewing. Discover more, comprehend faster, and skip the fluff with SummarizeTube. Whether you're a researcher, student, or simply a curious viewer, this powerful tool simplifies the process of extracting valuable insights from videos, allowing you to make the most of your time and dive straight into the key points that matter. Experience a new level of video content consumption with SummarizeTube.</p>
+          </div>
+          
         </div>
       </header>
 
       {% extends "base.html" %} {% block content %}
       <div>
         <form method="post" onsubmit='callValue()'>
-          <input type="url" id ="Youtube-Link" placeholder="Paste the video link" required /></br>
-          <button id="summarise" type="button">Summarize</button>
+          <input type="url" id ="Youtube-Link" class="Youtube-Link" placeholder="Paste the video link" required /></br>
         </form>
-         <p id="output"></p>
+         <button id="summarise" class="summarise-btn" type="button">Summarize</button>
       </div>
 
+
+      <div id="output-preview" class="output-preview">
+        <p id="output" class="output"></p>
+        <button id="copy_btn" class="copy_btn"><i class="fa-solid fa-copy fa-2xl copy_img" ></i></i></button>
+      </div>
+      
+      
+      <div class="lang-trans">
+        <h1 class="slogan">Want to translate ?</h1>
+    
+      <div>
+          <label for="lang" class="lang">Choose a language:</label></br>
+          <select name="lang" id="lang" class="lang" required>
+            <option value="Hindi">Hindi</option>
+            <option value="Urdu">Urdu</option>
+            <option value="Tamil">Tamil</option>
+            <option value="Spanish">Spanish</option>
+            <option value="Telugu">Telugu</option>
+            <option value="Japanese">Japanese</option>
+            <option value="German">German</option>
+            <option value="French">French</option>
+            <option value="German">German</option>
+            <option value="Arabic">Arabic</option>
+            <option value="Bengali">Bengali</option>
+            <option value="Korean">Korean</option>
+            <option value="Italian">Italian</option>
+            <option value="Indonesian">Indonesian</option>
+            <option value="Portuguese">Portuguese</option>
+            <option value="Russian">Russian</option>
+            <option value="Croatian">Croatian</option>
+            <option value="Dutch">Dutch</option>
+            <option value="Afrikaans">Afrikaans</option> 
+            <option value="Hungarian">Hungarian</option>
+            <option value="Finnish">Finnish</option>
+            
+          </select>
+          <button id="translate" class="summarise-btn" type="button">Translate</button>
+        </div>
+          <div class="output-preview">
+          <p id="outputTrans" class="output"></p>
+          <button id="copy_btn_trans" class="copy_btn_trans"><i class="fa-solid fa-copy fa-2xl copy_img" ></i></i></button>
+          </div>
+          <input type="button" value="Refresh" class="summarise-btn" onClick="window.location.reload(true)">
+      </div>
       {% endblock %}
     </div>
   </body>
