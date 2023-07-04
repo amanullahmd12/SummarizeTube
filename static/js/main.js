@@ -2,6 +2,11 @@ $ (document).ready (function () {
   $ ('.lang-trans').hide ();
   $ ('.copy_btn').hide ();
 
+  const checkbox = document.getElementById ('checkbox');
+  checkbox.addEventListener ('change', () => {
+    document.body.classList.toggle ('dark');
+  });
+
   const copy = document.getElementById ('copy_btn');
   copy.addEventListener ('click', function () {
     var text = document.getElementById ('output').innerHTML;
