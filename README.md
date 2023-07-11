@@ -19,7 +19,7 @@ It a web application to summarise long YouTube videos by utilising YouTube's tra
 
 
 ## Interface
-<img width="1440" alt="Screenshot 2023-07-11 at 8 23 50 AM" src="https://github.com/amanullahmd12/youtube-transcript-summarizer-webapp/assets/92320933/065726e1-5ea1-4129-9c68-8500698bf0be
+<img width="1440" alt="Screenshot 2023-07-11 at 8 23 50 AM" src="https://github.com/amanullahmd12/youtube-transcript-summarizer-webapp/assets/92320933/065726e1-5ea1-4129-9c68-8500698bf0be">
 
 
 
