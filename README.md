@@ -59,8 +59,5 @@ Feel free to explore, fork, and submit pull requests to make SummarizeTube an ev
 
 
 
-
-
 ## Thank You
-
 Thank you for your interest in SummarizeTube! I hope this application simplifies your YouTube video consumption and enhances your understanding of video content across different languages. Let's collaborate to make video summarization and translation a breeze with SummarizeTube! 📺📜🌐
